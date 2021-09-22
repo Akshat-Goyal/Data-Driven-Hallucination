@@ -33,7 +33,7 @@ SIGGRAPH ASIA, 2013
 
 ## Running the program
 
-- git clone https://github.com/Digital-Image-Processing-IIITH/project-image-processors.git
+- git clone.
 - Install mexOpenCV for matlab 
 - Add path of mexOpenCV in addpath in libs/Timelapse/SearchCandidates.m 
 - Download the dataset from this link: https://drive.google.com/drive/folders/1FlULAdKt6JAfe8lrl0LFDf3bo2_lPPzL?usp=sharing
