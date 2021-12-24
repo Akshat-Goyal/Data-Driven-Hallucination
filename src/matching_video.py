@@ -89,15 +89,13 @@ class Match_Video:
         #     print(count,'\t',similarity,'\t',video_path,)
         # similarities_array.sort()
 
-        print(max_similarity)
-        print(max_index)
-        return similarities_array[:, :min(5, similarities_array.shape[1])]
+        return similarities_array[:, :min(5, similarities_array.shape[1])].T
 
 
 if __name__ == '__main__':
     match_video = Match_Video()
     # match_video.save_HOGFeatures()
     # img = np.random.randn(2, 2, 3)
-    img = cv2.imread('../data/img/singapore.jpg')
+    img = cv2.imread('../data/img/singapore_25.jpg')
     arr = match_video.findBestVideo(img)
-    # print("arr", arr)
+    print(arr)

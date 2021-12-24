@@ -65,12 +65,12 @@ class Match_Frame:
 
 
 if __name__ == '__main__':
-    image = cv2.imread('../data/img/singapore.jpg')
+    image = cv2.imread('../data/img/singapore_25.jpg')
     obj = Match_Frame()
     # obj.save_ImageHistogram('../data/videos/window_02.mp4')
     # print(obj.load_ImageHistogram("../data/videos/window_02.mp4")["descriptors"].shape)
     img, min_idx, min_dist = obj.best_distribution_frame(
-        image, '../data/videos/window_02.mp4')
+        image, '../data/videos/dubai.avi')
     print(min_idx, min_dist)
     # import matplotlib.pyplot as plt
     # plt.imshow(img)
